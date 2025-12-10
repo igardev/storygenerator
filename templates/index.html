@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Generator Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Story Generator</h1>
+            <p class="subtitle">Simplify the Life of Product Oweners</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <div class="form-group">
+                            <label for="llmEndpoint">LLM Endpoint</label>
+                            <input type="text" id="llmEndpoint" class="input" placeholder="Enter LLM endpoint URL">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model">Model</label>
+                            <input type="text" id="model" class="input" placeholder="Enter model name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="apiKey">API Key</label>
+                            <input type="password" id="apiKey" class="input" placeholder="Enter API key">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requirement">Requirement</label>
+                            <textarea id="requirement" class="textarea" rows="8" placeholder="Enter requirements"></textarea>
+                        </div>
+                        
+                        <button id="createStoryBtn" class="btn btn-primary">Create Story</button>
+                    </div>
+                    
+                    <div class="right-column">
+                        <div class="form-group">
+                            <div class="label-row">
+                                <label for="story">Story</label>
+                                <button id="copyStoryBtn" class="btn btn-copy" title="Copy story to clipboard">
+                                    <span class="copy-icon">📋</span> Copy
+                                </button>
+                            </div>
+                            <div class="story-container">
+                                <div id="spinner" class="spinner hidden"></div>
+                                <textarea id="story" class="textarea story-textarea" placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Flask Application - Ready to build amazing things!</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
