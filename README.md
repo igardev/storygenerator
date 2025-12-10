@@ -2,6 +2,9 @@
 
 A Flask-based web application that simplifies the life of product owners by automatically generating user stories from requirements using Large Language Models (LLMs).
 
+<img width="1809" height="1095" alt="image" src="https://github.com/user-attachments/assets/b3b02109-988f-4dc3-aa61-a38a8f04ac2e" />
+
+
 ## Features
 
 - **LLM Integration**: Connect to any OpenAI-compatible LLM endpoint
