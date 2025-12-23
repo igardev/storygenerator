@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "storygenerator"
+version = "0.1.0"
+description = "Flask app that generates user stories from requirements using LLMs."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "Flask==3.0.0",
+    "Werkzeug==3.0.1",
+    "requests==2.31.0",
+]
+
+[tool.setuptools]
+py-modules = ["app", "prompts"]
+

@@ -42,7 +42,7 @@ A Flask-based web application that simplifies the life of product owners by auto
 
 4. **Install dependencies**:
    ```bash
-   pip install -r requirements.txt
+   pip install .
    ```
 
 ## Running the Application
@@ -87,7 +87,7 @@ The application will run in debug mode, so any code changes will automatically r
 flask/
 ├── app.py                 # Main Flask application
 ├── prompts.py            # User story prompt template
-├── requirements.txt      # Python dependencies
+├── pyproject.toml       # Project metadata and dependencies
 ├── README.md             # This file
 ├── .gitignore           # Git ignore rules
 ├── templates/
@@ -198,7 +198,7 @@ app.run(debug=True, host='0.0.0.0', port=8080)
 
 Make sure all dependencies are installed:
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
 
 ## License
